@@ -1,11 +1,15 @@
-import "./App.css";
+import "./styles/main.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Header from "./components/header/Header";
+import Main from "./components/main/Main";
 
-function App() {
+export default function App() {
   return (
-    <>
-      <h1>Vite + React</h1>
-    </>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Main />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;

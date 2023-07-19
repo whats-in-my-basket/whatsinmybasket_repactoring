@@ -1,0 +1,93 @@
+.header-wrapper {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 8px;
+    width: 100%;
+    height: 64px;
+    background-color: $color-darker;
+    color: white;
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        
+        .header-drawer-btn, .header-mode-toggle, .header-search-btn, .header-basket-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 0.5rem;
+            cursor: pointer;
+
+            .header-drawer-btn-img, .header-mode-toggle-btn, .header-search-btn-img, .header-basket-btn-img {
+                display: block;
+                width: 24px;
+                height: 24px;
+            }
+
+            &:hover {
+                background-color: hsl(220 13% 69% / 0.2);
+                transition: 0.2s;
+            }
+
+            &:active {
+                transform: scale(0.9);
+                background-color: hsl(220 13% 69% / 0.2);
+                transition: 0.2s;
+            }
+        }
+
+        .header-common-btn {
+            font-size: 18px;
+            font-weight: 700;
+            color: white;
+            padding: 6px 8px;
+            border-radius: 0.5rem;
+            cursor: pointer;
+
+            &.category {
+                font-size: 14px;
+                padding: 6px 12px;
+            }
+
+            &.category:hover {
+                background-color: hsl(220 13% 69% / 0.2);
+                transition: 0.2s;
+            }
+
+            &.category:active {
+                transform: scale(0.9);
+                background-color: hsl(220 13% 69% / 0.2);
+                transition: 0.2s;
+            }
+        }
+
+        .header-search-bar-input {
+            padding: 0 16px;
+            width: 222px;
+            height: 48px;
+            font-weight: 600;
+            font-size: 14px;
+            color: white;
+            background-color: $color-blue-gray;
+            border-radius: 5px;
+
+            &::placeholder {
+                color: $color-bright-gray;
+                letter-spacing: 0.2px;
+            }
+        }
+        
+        .mobile-search-bar {
+            position: absolute;
+            top: 70px;
+            right: 0; 
+        }
+
+    }
+}

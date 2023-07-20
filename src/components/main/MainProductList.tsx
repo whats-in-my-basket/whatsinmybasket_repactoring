@@ -41,8 +41,6 @@ export default function MainProductList() {
       });
   }, []);
 
-  console.log(fashion, accessory, digital);
-
   return (
     <div className="main-product-list-wrapper">
       {ITEM_LIST.map((item, index) => {

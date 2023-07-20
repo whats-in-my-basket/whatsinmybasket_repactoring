@@ -473,7 +473,7 @@ button, input {
 .carousel-wrapper .carousel-slide-list .carousel-slide .carousel-info-area {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   position: absolute;
   left: 50%;
   top: 50%;

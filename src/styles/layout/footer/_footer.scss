@@ -1,0 +1,61 @@
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2.5rem;
+  padding: 40px;
+  background-color: $color-footer;
+  color: $color-brighter;
+
+  .footer-site-title-area {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+
+    .footer-site-title {
+      text-decoration: none;
+      color: hsl(220 13% 69% / 1);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .footer-card-area {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .footer-sns-area {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .footer-sns-text {
+      display: flex;
+      align-items: center;
+
+      .footer-sns-arrow {
+        font-size: 1.5rem;
+        color: $color-brighter;
+      }
+    }
+
+    a {
+      position: relative;
+
+      .footer-sns-image {
+        fill: hsl(220 13% 69% / 1);
+        z-index: 1;
+      }
+    }
+  }
+
+  .footer-copyright {
+    text-align: center;
+    font-size: 0.875rem;
+  }
+}

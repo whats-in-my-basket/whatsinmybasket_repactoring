@@ -1,0 +1,139 @@
+@media (min-width: 1024px) {
+  .carousel-prev-btn,
+  .carousel-next-btn {
+    height: 700px;
+  }
+
+  .carousel-slide {
+    height: 700px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .carousel-prev-btn,
+  .carousel-next-btn {
+    height: 220px;
+  }
+
+  .carousel-slide {
+    height: 220px;
+  }
+
+  .linkBtn {
+    height: 30px;
+  }
+}
+
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  .carousel-next-btn,
+  .carousel-prev-btn {
+    position: absolute;
+    display: block;
+    padding: 8px;
+    height: 100%;
+    font-size: 26px;
+    color: rgba(255, 255, 255, 0.4);
+    z-index: 1;
+  }
+
+  .carousel-prev-btn {
+    left: 0;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+      color: white;
+    }
+  }
+
+  .carousel-next-btn {
+    right: 0;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+      color: white;
+    }
+  }
+
+  .carousel-slide-list {
+    display: flex;
+    transition: transform 0.2s;
+
+    .carousel-slide {
+      position: relative;
+      width: 100%;
+      flex: 1 0 100%;
+
+      &.selected {
+        display: flex;
+      }
+
+      .carousel-slide-image {
+        width: 100%;
+        height: 700px;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .carousel-info-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-bottom: 40px;
+        padding: 0px 40px;
+        height: 140px;
+        transform: translate(-50%, -50%);
+
+        .carousel-info-background-area {
+          padding: 20px;
+          width: 400px;
+          border-radius: 8px;
+          background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .carousel-info-title {
+          display: block;
+          height: 40px;
+          font-size: 2.25rem;
+          font-weight: 700;
+          letter-spacing: -0.2px;
+          color: white;
+        }
+
+        .carousel-info-desc {
+          margin: 8px 0;
+          color: white;
+        }
+
+        .carousel-info-url-btn {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 120px;
+          height: 48px;
+          padding: 0 16px;
+          margin-top: 12px;
+          font-size: 0.9rem;
+          border-radius: 8px;
+          border: 1px solid hsl(218 18% 12%);
+          background-color: hsl(218 18% 12%);
+          color: hsl(220 13% 69%);
+          text-decoration: none;
+
+          .carousel-info-url-image {
+            height: 20px;
+            width: 20px;
+            margin-left: 4px;
+          }
+        }
+      }
+    }
+  }
+}

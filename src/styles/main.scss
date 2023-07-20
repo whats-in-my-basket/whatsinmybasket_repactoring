@@ -6,7 +6,14 @@
 @import "./base/base";
 @import "./base/reset";
 
+@import "./layout/common/common";
 @import "./layout/common/modal";
 @import "./layout/common/drawer";
 
-@import "./layout/header/header";   
+@import "./layout/header/header";
+@import "./layout/footer/footer";
+
+@import "./layout/main/main";
+@import "./layout/main/mainCarousel";
+
+@import "./layout/product/product";

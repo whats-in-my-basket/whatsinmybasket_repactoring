@@ -1,0 +1,112 @@
+@media (min-width: 1024px) {
+  .card-list {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    .card-info-area {
+      padding: 32px;
+
+      .card-title {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .card-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    .card-info-area {
+      padding: 16px;
+
+      .card-title {
+        margin-bottom: 4px;
+      }
+    }
+  }
+
+  .card-info-area {
+    padding: 16px;
+
+    .card-title {
+      margin-bottom: 4px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .card-list {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(320px, 1fr);
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-list {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(220px, 1fr);
+    overflow-x: auto;
+  }
+}
+
+.card-list {
+  display: grid;
+  gap: 1.5rem;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.8rem;
+    text-decoration: none;
+    color: hsl(220 13% 69% / 1);
+    overflow: hidden;
+
+    figure {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 320px;
+      background-color: white;
+
+      &:hover {
+        .card-image {
+          max-height: 60%;
+        }
+      }
+
+      .card-image {
+        max-width: 60%;
+        max-height: 50%;
+        transition-duration: 0.3s;
+      }
+    }
+
+    .card-info-area {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex: 1 1 auto;
+      background-color: $color-card-info;
+
+      .card-title {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+        overflow-y: scroll;
+      }
+
+      .card-price {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+      }
+    }
+  }
+}

@@ -606,7 +606,7 @@ button, input {
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5rem;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .card-list .card .card-info-area .card-price {
   margin: 0;

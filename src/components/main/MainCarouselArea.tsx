@@ -12,21 +12,24 @@ export default function MainCarouselArea() {
       desc: "이제 막 도착한 패션 청바지를 구경해보세요.",
       id: 1,
       url: "/fashion",
-      image: "../../src/assets/image/fashion-image.jpeg",
+      image: "../../src/assets/image/fashion-image.jpg",
+      imageWebp: "../../src/assets/image/fashion-image.webp",
     },
     {
       title: "신속한 업무처리!",
       desc: "다양한 디지털 상품을 둘러보세요.",
       id: 2,
       url: "/digital",
-      image: "../../src/assets/image/digital-image.jpeg",
+      image: "../../src/assets/image/digital-image.jpg",
+      imageWebp: "../../src/assets/image/digital-image.webp",
     },
     {
       title: "신선한 식품",
       desc: "농장 직배송으로 더욱 신선한 식료품을 만나보세요.",
       id: 3,
       url: "/accessory",
-      image: "../../src/assets/image/accessory-image.jpeg",
+      image: "../../src/assets/image/accessory-image.jpg",
+      imageWebp: "../../src/assets/image/accessory-image.webp",
     },
   ];
 
@@ -76,11 +79,7 @@ export default function MainCarouselArea() {
       >
         {items.map((item, idx) => {
           return (
-            <MainCarouselItem
-              selected={index == idx ? true : false}
-              key={item.id}
-              item={item}
-            />
+            <MainCarouselItem selected={index == idx ? true : false} key={item.id} item={item} />
           );
         })}
       </ul>

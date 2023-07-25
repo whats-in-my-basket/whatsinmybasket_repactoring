@@ -2,21 +2,19 @@ import { Link } from "react-router-dom";
 import { MainCarouselItemProps } from "./_Main.interface";
 import { useMediaQuery } from "react-responsive";
 
-export default function MainCarouselItem({
-  selected,
-  item,
-}: MainCarouselItemProps) {
+export default function MainCarouselItem({ selected, item }: MainCarouselItemProps) {
   const isDesktop = useMediaQuery({ minDeviceWidth: "1024px" });
   return (
     <>
       <li className={selected ? "carousel-slide selected" : "carousel-slide"}>
-        <img className="carousel-slide-image" src={item.image}></img>
+        <picture className="carousel-image-area">
+          <source className="carousel-slide-image" srcSet={item.imageWebp}></source>
+          <img className="carousel-slide-image" src={item.image}></img>
+        </picture>
         <div
           className="carousel-info-area"
           style={
-            isDesktop
-              ? { minWidth: "1025px" }
-              : { width: document.documentElement.clientWidth }
+            isDesktop ? { minWidth: "1025px" } : { width: document.documentElement.clientWidth }
           }
         >
           <div className="carousel-info-background-area">

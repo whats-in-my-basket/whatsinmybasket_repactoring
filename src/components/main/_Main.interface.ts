@@ -9,4 +9,5 @@ export interface CarouselItemProps {
   id: number;
   url: string;
   image: string;
+  imageWebp: string;
 }

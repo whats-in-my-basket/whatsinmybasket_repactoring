@@ -1,4 +1,4 @@
-import CardList from "../product/CardList";
+import MainCardList from "./MainCardList";
 
 export default function MainProductList() {
   const TITLE_LIST = ["패션", "액세서리", "디지털"];
@@ -9,7 +9,7 @@ export default function MainProductList() {
         return (
           <div className="main-product-list-container" key={index}>
             <h2 className="product-title">{title}</h2>
-            <CardList title={title} />
+            <MainCardList title={title} />
           </div>
         );
       })}

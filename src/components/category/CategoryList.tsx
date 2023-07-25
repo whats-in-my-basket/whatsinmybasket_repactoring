@@ -1,4 +1,4 @@
-import CategoryCardList from "../product/CategoryCardList";
+import CategoryCardList from "./CategoryCardList";
 import { CategoryListProps } from "./_Category.interface";
 
 export default function CategoryList({ title }: CategoryListProps) {

@@ -64,12 +64,21 @@
     color: hsl(220 13% 69% / 1);
     overflow: hidden;
 
-    figure {
+    .card-image-area {
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       height: 320px;
       background-color: white;
+
+      .card-lazy-load-area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        background-color: white;
+      }
 
       &:hover {
         .card-image {

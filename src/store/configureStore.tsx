@@ -2,9 +2,13 @@ import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { useDispatch, useSelector } from "react-redux";
 
 import modal from "./modules/modal";
+import cart from "./modules/cart";
+import cartModal from "./modules/cartModal";
 
 const reducers = combineReducers({
   modal: modal,
+  cartModal: cartModal,
+  cart: cart,
 });
 
 const store = configureStore({

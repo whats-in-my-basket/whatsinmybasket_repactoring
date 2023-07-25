@@ -1,0 +1,27 @@
+.cart-empty-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  .cart-empty-text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 400;
+  }
+
+  .cart-go-shopping-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 0px 16px;
+    height: 3rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    background-color: hsl(262 80% 50%);
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}

@@ -9,11 +9,20 @@
 @import "./layout/common/common";
 @import "./layout/common/modal";
 @import "./layout/common/drawer";
+@import "./layout/common/logger";
+@import "./layout/common/skeleton";
 
 @import "./layout/header/header";
+@import "./layout/header/headerFilter";
+
 @import "./layout/footer/footer";
 
 @import "./layout/main/main";
 @import "./layout/main/mainCarousel";
 
 @import "./layout/product/product";
+@import "./layout/category/category";
+@import "./layout/detail/detail";
+
+@import "./layout/cart/cart";
+@import "./layout/cart/cartEmpty";

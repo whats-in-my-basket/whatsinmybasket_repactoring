@@ -14,6 +14,10 @@ export const cartSlice = createSlice({
       return state.filter((item: any) => item.id !== action.payload);
     },
 
+    setResetCart() {
+      return initialState;
+    },
+
     setCountPlus(state, action) {
       const index = state.findIndex((item) => {
         return item.id === action.payload;
@@ -25,11 +29,11 @@ export const cartSlice = createSlice({
       const index = state.findIndex((item) => {
         return item.id === action.payload;
       });
-
       state[index].count -= 1;
     },
   },
 });
 
-export const { setPushCart, setDeleteCart, setCountPlus, setCountMinus } = cartSlice.actions;
+export const { setPushCart, setDeleteCart, setResetCart, setCountPlus, setCountMinus } =
+  cartSlice.actions;
 export default cartSlice.reducer;

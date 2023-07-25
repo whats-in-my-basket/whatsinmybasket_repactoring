@@ -430,6 +430,9 @@ button, input {
   top: 70px;
   right: 0;
 }
+.header-wrapper .header-container .mobile-search-bar .header-search-bar-input {
+  border-radius: 16px;
+}
 
 .header-filter-list {
   display: none;
@@ -445,6 +448,11 @@ button, input {
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
   background-color: rgb(75, 85, 99);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.header-filter-list::-webkit-scrollbar {
+  display: none;
 }
 .header-filter-list.active {
   display: flex;
@@ -462,6 +470,13 @@ button, input {
   word-break: break-word;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+}
+
+.mobile-search-bar .header-filter-list {
+  top: 50px;
+  left: 0;
+  width: 222px;
+  border-radius: 16px;
 }
 
 .footer-wrapper {

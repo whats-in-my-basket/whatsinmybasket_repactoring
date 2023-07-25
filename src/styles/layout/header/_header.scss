@@ -114,6 +114,10 @@
       position: absolute;
       top: 70px;
       right: 0;
+
+      .header-search-bar-input {
+        border-radius: 16px;
+      }
     }
   }
 }

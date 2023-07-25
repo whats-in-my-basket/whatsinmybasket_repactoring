@@ -8,5 +8,14 @@ export interface ProductProps {
 }
 
 export interface CardListProps {
-  item: ProductProps[] | undefined;
+  title: string;
+}
+
+export interface CardProps {
+  id: number;
+  title: string;
+  category: string;
+  price: number;
+  image: string;
+  description: string;
 }

@@ -1112,6 +1112,10 @@ button, input {
   cursor: pointer;
   text-decoration: none;
 }
+.cart-wrapper .cart-container .cart-total-list .cart-total-area .cart-total-buy-btn:disabled {
+  background-color: rgb(55, 65, 81);
+  color: rgb(158, 158, 158);
+}
 
 .cart-empty-list {
   display: flex;

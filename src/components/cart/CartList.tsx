@@ -22,7 +22,6 @@ export default function CartList() {
     setTotal(total);
   }, [cartItem]);
 
-  console.log(cartItem);
   return (
     <div className="cart-container">
       <div className="cart-card-list">
@@ -34,7 +33,11 @@ export default function CartList() {
       <div className="cart-total-list">
         <div className="cart-total-area">
           <span className="cart-total-text">{`총 : $${total}`}</span>
-          <button className="cart-total-buy-btn" onClick={buyCartItem}>
+          <button
+            className="cart-total-buy-btn"
+            onClick={buyCartItem}
+            disabled={cartItem.length === 0 && true}
+          >
             구매하기
           </button>
         </div>

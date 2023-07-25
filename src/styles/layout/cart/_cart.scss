@@ -189,6 +189,11 @@
           color: white;
           cursor: pointer;
           text-decoration: none;
+
+          &:disabled {
+            background-color: $color-card-info;
+            color: rgb(158, 158, 158);
+          }
         }
       }
     }

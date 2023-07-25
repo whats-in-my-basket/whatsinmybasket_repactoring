@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { IoMdArrowDropleft, IoMdArrowDropright } from "react-icons/io";
 import MainCarouselItem from "./MainCarouselItem";
-import fashionImage from "../../src/assets/image/fashion-image.jpg";
-import fashionImageWebp from "../../src/assets/image/fashion-image.webp";
-import accessoryImage from "../../src/assets/image/accessory-image.jpg";
-import accessoryImageWebp from "../../src/assets/image/accessory-image.webp";
-import digitalImage from "../../src/assets/image/digital-image.jpg";
-import digitalImageWebp from "../../src/assets/image/digital-image.webp";
+import fashionImage from "../../assets/image/fashion-image.jpg";
+import fashionImageWebp from "../../assets/image/fashion-image.webp";
+import accessoryImage from "../../assets/image/accessory-image.jpg";
+import accessoryImageWebp from "../../assets/image/accessory-image.webp";
+import digitalImage from "../../assets/image/digital-image.jpg";
+import digitalImageWebp from "../../assets/image/digital-image.webp";
 
 export default function MainCarouselArea() {
   const [index, setIndex] = useState(0);

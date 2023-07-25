@@ -1,0 +1,30 @@
+.category-log-area {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  background-color: $color-common;
+  color: $color-brighter;
+
+  .category-log-first {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: flex;
+      align-items: center;
+      left: 50%;
+      top: 50%;
+      width: 5px;
+      height: 5px;
+      margin: 0 8px;
+      border-right: 1px solid $color-brighter;
+      border-bottom: 1px solid $color-brighter;
+      transform: translate((-50%, -50%));
+      transform: rotate(-45deg);
+    }
+  }
+}

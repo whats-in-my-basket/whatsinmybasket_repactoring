@@ -4,7 +4,8 @@
     height: 700px;
   }
 
-  .carousel-slide {
+  .carousel-slide,
+  .carousel-slide-image {
     height: 700px;
   }
 }
@@ -15,7 +16,8 @@
     height: 220px;
   }
 
-  .carousel-slide {
+  .carousel-slide,
+  .carousel-slide-image {
     height: 220px;
   }
 
@@ -72,11 +74,14 @@
         display: flex;
       }
 
-      .carousel-slide-image {
+      .carousel-image-area {
         width: 100%;
-        height: 700px;
-        background-repeat: no-repeat;
-        background-size: cover;
+        .carousel-slide-image {
+          width: 100%;
+          background-repeat: no-repeat;
+          object-fit: cover;
+          object-position: bottom;
+        }
       }
 
       .carousel-info-area {

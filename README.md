@@ -20,7 +20,6 @@
   <img src="https://img.shields.io/badge/React Router-CA4245?style=flat&logo=React Router&logoColor=white"/> 
   <img src="https://img.shields.io/badge/Axios-5A29E4?style=flat&logo=Axios&logoColor=white"/> 
   <img src="https://img.shields.io/badge/SCSS-CC6699?style=flat&logo=Sass&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Tailwind CSS-06B6D4?style=flat&logo=Tailwind CSS&logoColor=white"/>
   <img src="https://img.shields.io/badge/Vercel-000000?style=flat&logo=Tailwind CSS&logoColor=white"/>
 </div>
 
@@ -57,7 +56,7 @@
 
 <br />
 
-### 2️⃣ Languages & Tools 변경
+### 2️⃣ Languages & 상태 관리 Tool 변경
 1. ##### TypeScript
    ###### 빌드 이전 단계에서 오류를 선제적으로 찾아 코드 안정성을 높힘
    

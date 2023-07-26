@@ -1,4 +1,4 @@
-# 💡 What's im my Basket ❓
+# 💡 What's in my Basket ❓
 > 기존에 개발했던 쇼핑 플랫폼 프로젝트를 Refactoring 해보자!
 
 <br /><br />
@@ -29,14 +29,19 @@
 # 🌟 Point Skills
 
 
-||
-|:---:|
-|카테고리 필터 기능|
+  |<img width="700" src="https://github.com/whats-in-my-basket/whatsinmybasket_repactoring/assets/102032298/bb919cfa-7573-424a-b158-15701d84bfe3" />|
+  |:---:|
+  |카테고리 기능|
+  
+  |<img width="700" src="https://github.com/whats-in-my-basket/whatsinmybasket_repactoring/assets/102032298/522c7a90-7d4d-4b0a-b42a-0fad3241da33" />|
+  |:---:|
+  |검색 및 필터 기능|
+  
+  |<img width="700" src="https://github.com/whats-in-my-basket/whatsinmybasket_repactoring/assets/102032298/7694d12f-bf20-42dd-b382-c2bb42c8a8b0)" />|
+  |:---:|
+  |장바구니 추가, 삭제, 구매 기능|
+</div>
 
-
-|||
-|:---:|:---:|
-|장바구니 기능||
 
 <br /><br />
 
@@ -90,6 +95,8 @@
 <br />
 
 ### 5️⃣ 프론트 배포
+##### Vercel 배포를 통해 실제 동작하는 웹페이지의 모습 확인 
+바로가기 🔽
+
 [<img src="https://img.shields.io/badge/Whats in my Basket-000000?style=for-the-badge&logo=Whats in my Basket&logoColor=white"/>](https://whatsinmybasket.vercel.app/)
-##### Vercel 배포를 통해 실제 동작하는 웹페이지의 모습 확인
 

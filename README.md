@@ -11,7 +11,7 @@
 
 <br /><br />
 
-## 🛠️ 기술 스택
+# 🛠️ 기술 스택
 
 <div align="left">
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=TypeScript&logoColor=white"/>
@@ -26,7 +26,7 @@
 
 <br /><br />
 
-## 🌟 Point Skills
+# 🌟 Point Skills
 
 
 |||
@@ -40,7 +40,7 @@
 
 <br /><br />
 
-## 🚀 Refactoring Contents
+# 🚀 Refactoring Contents
 
 ### 1️⃣ 컴포넌트 구조 재설계 
 1) ##### pages 내 파일 - components 폴더 - styles/layout 폴더의 이름 및 구조가 완전히 일치하도록 설계
@@ -52,15 +52,25 @@
 
 <br />
 
-### 2️⃣ 전역 상태관리 Tool 변경 
-##### Redux-Toolkit을 통해 무분별한 Props drilling을 방지하고 전역 상태를 관리함 
+### 2️⃣ Languages & Tools 변경
+1. ##### TypeScript
+   ###### 빌드 이전 단계에서 오류를 선제적으로 찾아 코드 안정성을 높힘
+   
+2. ##### SCSS
+   ###### 변수 선언 : 프로젝트 내 color 간의 오차를 줄일 수 있고, 대대적 color 변경 시에도 유지보수가 간편함 
+   ###### 중첩 기능 : 스타일 코드의 가독성을 높이고 더욱 효율적인 개발이 가능
+   
+3. ##### Redux-Toolkit
+   ###### Redux의 기존 단점을 보완하고 간결하고 정형화된 코드 패턴을 사용
 
 <br />
 
 ### 3️⃣ 사용자 친화적인 UI 
-1) ##### 반응형 디자인 구현
+1) ##### 반응형 디자인
+   ###### 모든 플랫폼에서 일관된 콘텐츠 경험을 사용자에게 제공
 
-2) ##### Skeleton UI 기능 추가
+2) ##### Skeleton UI 기능
+   ###### 실제 데이터가 렌더링 되기 전 화면의 윤곽을 미리 보여줌으로써 사용자의 이탈을 막음
 
 <br />
 

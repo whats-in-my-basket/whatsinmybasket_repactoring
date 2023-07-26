@@ -68,8 +68,13 @@
 ### 3️⃣ 사용자 친화적인 UI 
 1) ##### 반응형 디자인
    ###### 모든 플랫폼에서 일관된 콘텐츠 경험을 사용자에게 제공
+   |<img width="460" alt="데스크탑" src="https://github.com/whats-in-my-basket/whatsinmybasket_repactoring/assets/102032298/ccd1c281-2b72-410b-856e-86c4a6dbb7e0">|<img width="301" alt="모바일" src="https://github.com/whats-in-my-basket/whatsinmybasket_repactoring/assets/102032298/5049d86c-f368-44b5-9094-9ac60a5b220e">|
+   |:----:|:----:|
+   |Desktop|Mobile|
+   
 
-2) ##### Skeleton UI 기능
+
+3) ##### Skeleton UI 기능
    ###### 실제 데이터가 렌더링 되기 전 화면의 윤곽을 미리 보여줌으로써 사용자의 이탈을 막음
 
 <br />
